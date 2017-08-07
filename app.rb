@@ -16,6 +16,10 @@ def bot_reply(message)
   response_json['status'] == "success" ? response_json['result'] : 'わからへん~　( ;∀;)'
 end
 
+get '/' do
+  "<h1>Hello my name is Ailine and I'm a BOT.<h1>"
+end
+
 post '/callback' do
   body = request.body.read
 
